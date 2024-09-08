@@ -2,11 +2,142 @@
 import MainLayout from "../layouts/MainLayout.astro";
 import Button from '../components/Button.astro';
 import Link from '../components/Link.astro';
+import Anmeldelse from "../components/Anmeldelse.astro";
 ---
 <MainLayout title="Titel">
-	<article>
-		<h1>Index overskrift</h1>
-		<Button>Klik!</Button>
-		<p>Link til <Link href="https://www.kea.dk" target="_blank">En anden side</Link></p>
-	</article>
+		<section class="grid md:grid-cols-3 py-8 md:px-5 gap-4 text-right items-center">
+			<div class="col-span-2">
+				<img src="https://picsum.photos/536/354" alt="billede">
+			</div>
+			<div class="">
+				<p class="text-justify py-3">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ut leo nec enim malesuada sodales.  Sed at orci vulputate, mollis enim eu, iaculis ipsum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aenean molestie, turpis id ultrices maximus, erat orci ullamcorper ex, ac vehicula tellus turpis ac ipsum. Curabitur quis rhoncus quam. Morbi ac lectus massa. Etiam pellentesque sapien non tempor ullamcorper. Praesent non varius ligula. Aliquam eu consectetur ex, nec facilisis lorem. Proin eleifend leo vel luctus finibus.
+					</p>
+					<Button variant="secondary" size="medium">Knaptekst</Button>
+			</div>
+		</section>
+		<section class="max-w-2xl m-auto text-right elementmedanimation1">
+			<p class="text-justify py-3">
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ut leo nec enim malesuada sodales. Aliquam eleifend odio non sollicitudin lacinia. Sed at orci vulputate, mollis enim eu, iaculis ipsum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam pellentesque sapien non tempor ullamcorper. Praesent non varius ligula. Proin eleifend leo vel luctus finibus.
+			</p>
+			<img src="https://picsum.photos/536/354" alt="billede">
+			<p class="text-justify py-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+			<Button>Klik!</Button>
+		</section>
+		<section class="py-8 grid md:grid-cols-3">
+			<div>
+				<img src="https://picsum.photos/536/354" alt="billede" class="w-4/12 m-auto">
+				<p class="py-3">
+					Lorem ipsum dolor sit amet. Sed at orci vulputate, mollis enim eu, iaculis ipsum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aenean molestie, turpis id ultrices maximus, erat orci ullamcorper ex, ac vehicula tellus turpis ac ipsum. Curabitur quis rhoncus quam. Morbi ac lectus massa. Etiam pellentesque sapien non tempor ullamcorper. Praesent non varius ligula. 
+					</p>
+			</div>
+			<div>
+				<img src="https://picsum.photos/536/354" alt="billede" class="w-4/12 m-auto">
+				<p class="py-3">
+					Lorem ipsum dolor sit amet. Sed at orci vulputate, mollis enim eu, iaculis ipsum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aenean molestie, turpis id ultrices maximus, erat orci ullamcorper ex, ac vehicula tellus turpis ac ipsum. Curabitur quis rhoncus quam. Morbi ac lectus massa. Etiam pellentesque sapien non tempor ullamcorper. Praesent non varius ligula. 
+				</p>
+			</div>
+			<div>
+				<img src="https://picsum.photos/536/354" alt="billede" class="w-4/12 m-auto">
+				<p class="py-3">
+					Lorem ipsum dolor sit amet. Sed at orci vulputate, mollis enim eu, iaculis ipsum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aenean molestie, turpis id ultrices maximus, erat orci ullamcorper ex, ac vehicula tellus turpis ac ipsum. Curabitur quis rhoncus quam. Morbi ac lectus massa. Etiam pellentesque sapien non tempor ullamcorper. Praesent non varius ligula. 
+				</p>
+			</div>
+		</section>
+		<section class="md:max-w-2xl md:m-auto">
+			<p class="py-3">
+				Lorem ipsum dolor sit amet. Sed at orci vulputate, mollis enim eu, iaculis ipsum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aenean molestie, turpis id ultrices maximus, erat orci ullamcorper ex, ac vehicula tellus turpis ac ipsum. Curabitur quis rhoncus quam. Morbi ac lectus massa. Etiam pellentesque sapien non tempor ullamcorper. Praesent non varius ligula. 
+			</p>
+			<img src="https://picsum.photos/536/354" alt="">
+			<p class="py-3">
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ut leo nec enim malesuada sodales. Aliquam eleifend odio non sollicitudin lacinia.
+			</p>
+		</section>
+		
+		<section class="py-8">
+			<h2 class="text-4xl font-bold mb-8">Kursisterne siger</h2>
+			<div class="grid md:grid-cols-3">
+			<div>
+				<img src="https://picsum.photos/536/354" alt="billede" class="w-4/12 m-auto">
+				<p class="py-3">
+					Lorem ipsum dolor sit amet. Sed at orci vulputate, mollis enim eu, iaculis ipsum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aenean molestie, turpis id ultrices maximus, erat orci ullamcorper ex, ac vehicula tellus turpis ac ipsum. Curabitur quis rhoncus quam. Morbi ac lectus massa. Etiam pellentesque sapien non tempor ullamcorper. Praesent non varius ligula. 
+					</p>
+					<Anmeldelse titel="Godt!" stjerner="5" forfatter="Sanne Tovgaard, Proletikken" ammeldelseid="a1">
+					</Anmeldelse>
+			</div>
+			<div>
+				<img src="https://picsum.photos/536/354" alt="billede" class="w-4/12 m-auto">
+				<p class="py-3">
+					Lorem ipsum dolor sit amet. Sed at orci vulputate, mollis enim eu, iaculis ipsum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aenean molestie, turpis id ultrices maximus, erat orci ullamcorper ex, ac vehicula tellus turpis ac ipsum. Curabitur quis rhoncus quam. Morbi ac lectus massa. Etiam pellentesque sapien non tempor ullamcorper. Praesent non varius ligula. 
+				</p>
+			</div>
+			<div>
+				<img src="https://picsum.photos/536/354" alt="billede" class="w-4/12 m-auto">
+				<p class="py-3">
+					Lorem ipsum dolor sit amet. Sed at orci vulputate, mollis enim eu, iaculis ipsum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aenean molestie, turpis id ultrices maximus, erat orci ullamcorper ex, ac vehicula tellus turpis ac ipsum. Curabitur quis rhoncus quam. Morbi ac lectus massa. Etiam pellentesque sapien non tempor ullamcorper. Praesent non varius ligula. 
+				</p>
+			</div>
+		</div>
+		</section>
+		<section class="md:max-w-2xl md:m-auto elementmedanimation2">
+			<p>Lorem ipsum dolor sit amet. Sed at orci vulputate, mollis enim eu, iaculis ipsum. </p>
+			<form action="">
+				<label for="antal">Antal:</label>
+				<input type="number" class="py-1 my-2 rounded-l" id="antal" name="antal">
+				<br>
+				<label for="levering">Levering:</label>
+				<input type="radio" class="py-1 my-2" id="postnord" name="levering">
+				<label for="postnord">PostNord</label>
+				<input type="radio" class="py-1 my-2" id="afhent" name="levering">	
+				<label for="afhent">Afhent selv</label>
+				<br>
+				<label for="navn">Navn:</label>
+				<input type="text" class="py-1 my-2 rounded-l" id="navn" name="navn" value="Anders And">
+				<br>
+				<label for="adresse">Adresse:</label>
+				<input type="text" class="py-1 my-2 rounded-l" id="adresse" name="adresse" value="Paradisæblevej 8">
+				<br>
+				<label for="email">E-mail:</label>
+				<input type="email"  class="py-1 my-2 rounded-l" value="anders@andeby.dk">
+				<br>
+				<label for="postby">Postnummer & by:</label>
+				<input type="text" class="py-1 my-2 rounded-l" id="postby" name="postby" value="0900">
+				<br>
+				<label for="telefon">Telefon:</label>
+				<input type="tel" class="py-1 my-2 rounded-l" value="555-555">
+				<br>
+				<input type="checkbox">
+				
+				<label for="jatak">Ja tak til nyhedsbreve og tilbud</label>
+				<br>
+				<Button size="small"><input type="submit" value="Til betaling"></Button>
+				
+			</form>
+		</section>
+	
+	<script>
+	
+		import { inView } from "motion";
+		
+		 
+		
+		const elementmedanimation1 = document.querySelector(".elementmedanimation1");
+		
+		inView(elementmedanimation1, () => {
+		
+		elementmedanimation1.classList.add("animate__animated", "animate__bounceInDown", "animate__delay-1s");
+		
+		}); 
+		
+		 
+		
+		const elementmedanimation2 = document.querySelector(".elementmedanimation2");
+		
+		inView(elementmedanimation2, () => {
+		
+		elementmedanimation2.classList.add("animate__animated", "animate__backInLeft");
+		
+		}); 
+		
+		</script>
 </MainLayout>
